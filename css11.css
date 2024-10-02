@@ -1,0 +1,72 @@
+/* Animation classes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.transparent-banner {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.main-banner {
+    text-align: center;
+    margin: 20px 0;
+    animation: slideIn 2s ease-in-out;
+}
+
+.about-school, .gallery, .achievements, .more-info {
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.image-gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
